@@ -54,7 +54,7 @@ module.exports.getStudentById = async (req, res, next) => {
   try {
     const course_id = req.params.course_id
     const student_id = req.params.student_id
-    const result = await data.findOne({_id:course_id, "students._id":student_id })
+    const result = await data.findOne({_id:course_id, "students._id": student_id})
     res.send(result)   
   } catch (e) {
     next(e);
