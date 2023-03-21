@@ -1,0 +1,41 @@
+
+<div class="container">
+
+  <div>
+    <h1>Your Cart</h1>
+
+    <div class="cart-item" *ngFor="let cartItem of cart">
+      <div>
+        <img src="{{cartItem.image}}" />
+      </div>
+      <div class="cart-text">
+        <h2>{{cartItem.name}}</h2>
+        <h4>{{cartItem.description}}</h4>
+        <h3 style="font-weight: 400;">{{cartItem.price}} x {{cartItem.amount}} = ${{calculateSingleItemPrice(cartItem)}}</h3>
+      </div>
+      <div class="amount">
+        <button mat-mini-fab color="primary" (click)="decrement(cartItem)">
+          <mat-icon>remove</mat-icon>
+        </button>
+        <span> {{cartItem.amount}}x </span>
+        <button mat-mini-fab color="primary" (click)="increment(cartItem)">
+          <mat-icon>add</mat-icon>
+        </button>
+      </div>
+    </div>
+
+    <div class="cart-item" *ngIf="cart.length === 0" style="margin-top: 50px;">
+      <h3 style="text-align: center;">Your cart is currently empty.</h3>
+    </div>
+
+    <button [disabled]="cart.length === 0" (click)="checkout()"
+      class="checkout" mat-stroked-button color="primary">Checkout</button>
+  </div>
+
+  <div class="price-box">
+    <div class="total"><h2>Subtotal</h2><h2>${{ calculateSubTotalPrice(cart).toFixed(2) }}</h2></div>
+    <div class="total"><h3>Service Charge (15%)</h3><h3>${{ calculateTax(calculateSubTotalPrice(cart)) }}</h3></div>
+    <div class="total"><h1>Total</h1><h1>${{ calculateTotalPrice(calculateSubTotalPrice(cart)) }}</h1></div>
+  </div>
+
+</div>

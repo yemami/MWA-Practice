@@ -1,0 +1,38 @@
+
+<div class="container">
+
+  <h1 style="text-align: center;">Your Orders so far</h1>
+
+  <div class="order-item" *ngFor="let order of orders">
+    <div>
+      <span style="color: rgb(195, 184, 184)">
+        {{ order.createdAt | date }} -
+        {{ order.total | currency }} -
+        {{ calculateTotalItems(order) }} items
+      </span>
+      <h2 style="max-width: 350px;">
+        {{combineMenuItems(order.items)}}
+      </h2>
+
+      <div>
+        <app-star-rating [rating]="order.rating" [maxRating]="5"
+        [viewOnly]="order.rating" (selectedStars)="rateOrder(order, $event)">
+        </app-star-rating>
+      </div>
+    </div>
+
+    <div>
+      <button (click)="reorder(order)" class="button" mat-stroked-button color="primary">
+        <mat-icon>shopping_cart</mat-icon> Reorder
+      </button>
+      <button (click)="receipt(order)" class="button" mat-stroked-button color="primary">
+        <mat-icon>receipt</mat-icon> Receipt
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="orders.length === 0" style="margin-top: 50px;">
+    <h3 style="text-align: center;">You haven't made any orders yet</h3>
+  </div>
+
+</div>

@@ -1,0 +1,18 @@
+<div class="chat-container">
+  <mat-list>
+    <mat-list-item *ngFor="let message of messages">
+      <div [ngClass]="{'message-item': true, 'user-message': message.sender === 'user', 'bot-message': message.sender === 'bot'}">
+        {{ message.text }}
+      </div>
+    </mat-list-item>
+  </mat-list>
+</div>
+
+<div class="input-container">
+  <mat-form-field>
+    <input matInput [(ngModel)]="messageInput" placeholder="Type your message here...">
+  </mat-form-field>
+  <button mat-icon-button color="primary" (click)="sendMessage()">
+    <mat-icon>send</mat-icon>
+  </button>
+</div>

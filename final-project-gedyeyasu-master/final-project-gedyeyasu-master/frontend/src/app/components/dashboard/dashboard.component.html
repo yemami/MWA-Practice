@@ -1,0 +1,86 @@
+<div class="search-container">
+  <input
+    type="text"
+    (keyup)="update(inputReference.value)"
+    placeholder="Search for a menu..."
+    #inputReference
+  />
+  <button>Search</button>
+</div>
+<div class="search-results-card" *ngIf="searchResults ? true : false">
+  <ul *ngFor="let result of searchResults">
+    <li
+      routerLink="/restaurant/store/{{ result._id }}"
+      *ngFor="let menu of result?.menus"
+    >
+      {{ menu.name }} - {{ result.name }}
+    </li>
+  </ul>
+</div>
+
+<div class="dashboard-card">
+  <div class="categories-section">
+    <h2>Welcome Back {{fullName}}</h2>
+    <!-- <mat-nav-list>
+      <mat-list-item
+        *ngFor="let category of categories"
+        (click)="selectCategory(category)"
+      >
+        <mat-icon
+          id="cat_icon"
+          mat-list-icon
+          [ngClass]="{ 'active-category': selectedCategory === category }"
+          >{{ category.icon }}</mat-icon
+        >
+        <h4
+          mat-line
+          [ngClass]="{ 'active-category': selectedCategory === category }"
+        >
+          {{ category.name }}
+        </h4>
+      </mat-list-item>
+    </mat-nav-list> -->
+
+
+    <mat-chip-listbox>
+      <mat-chip-option *ngFor="let category of categories; let i=index"
+          (click)="selectCategory(category)" [selected]="i===0">
+          {{ category.name }}
+      </mat-chip-option>
+    </mat-chip-listbox>
+
+
+
+    <!-- <div class="categories-container">
+      <mat-card
+        *ngFor="let restaurant of restaurants"
+        routerLink="/restaurant/store/{{ restaurant._id }}"
+      >
+        <mat-card-header>
+          <img mat-card-avatar [src]="restaurant.picture.logoUrl" />
+          <mat-card-title>{{ restaurant.name }}</mat-card-title>
+          <mat-card-subtitle>{{ restaurant.cuisine }}</mat-card-subtitle>
+          <mat-card-subtitle>{{ restaurant.rating }} stars</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <img id="banner" mat-card-image [src]="restaurant.picture.imageUrl" />
+          <p>{{ restaurant.description }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div> -->
+
+
+    <div class="menu-gallery">
+      <div class="menu-item" *ngFor="let restaurant of restaurants" routerLink="/restaurant/store/{{ restaurant._id }}">
+        <img src="{{restaurant.picture.imageUrl}}">
+        <div class="restaurant-text">
+          <h2>{{restaurant.name}}</h2>
+          <p>{{restaurant.description}}</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>

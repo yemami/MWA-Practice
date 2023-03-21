@@ -1,0 +1,295 @@
+[{
+  "_id": {
+    "$oid": "63e031ad314bae35eda8793f"
+  },
+  "name": "McDonald's",
+  "menus": [
+    {
+      "name": "Big Mac Meal",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/07da0bc8-4d9d-4c07-8e63-796b64cbf8c2-retina-large.jpg",
+      "description": "Tomato sauce, mozzarella, and basil",
+      "price": 8.99
+    },
+    {
+      "name": "20 McNuggets",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/af2958fc-5413-4611-9971-898f767d6fd2-retina-large.jpg",
+      "description": "Tomato sauce, mozzarella, pepperoni, and oregano",
+      "price": 5.49
+    },
+    {
+      "name": "French Fries",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/dfd0ab4e-3e54-4829-a505-37a91417c98f-retina-large.jpg",
+      "description": "Tomato sauce, mozzarella, veggies, and herbs",
+      "price": 2.99
+    }
+  ],
+  "cusine": "Burger & Fries",
+  "rating": 5,
+  "description": "Authentic American burgers with a wide variety of toppings",
+  "category": [
+    "Burger"
+  ],
+  "deliveryTime": 46,
+  "address": {
+    "city": "Federico16",
+    "state": "Margarita52",
+    "street": "Ashlee_Braun55",
+    "zipCode": 22
+  },
+  "picture": {
+    "cover": "Silas87",
+    "logoUrl": "https://img.cdn4dd.com/p/fit=contain,width=100,height=100,format=auto,quality=95/media/restaurant/cover_square/efe58558-a9dc-466d-922b-ecce4b3213b1.png",
+    "imageUrl": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/8abb40c2-fc64-46bb-a526-f2b2d7579f6d-retina-large.jpg"
+  },
+  "location": [
+    -91.963298,
+    -41.021322
+  ],
+  "deliveryRadius": 37,
+  "reviews": []
+},{
+  "_id": {
+    "$oid": "63e032af314bae35eda87941"
+  },
+  "name": "Pizza Hut ",
+  "menus": [
+    {
+      "name": "Margherita Pizza",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/28d869ba-ebd1-476c-8c80-f63802d9b5cd-retina-large.JPG",
+      "description": "Tomato sauce, mozzarella, and basil",
+      "price": 9.99
+    },
+    {
+      "name": "Pepperoni Pizza",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/28d869ba-ebd1-476c-8c80-f63802d9b5cd-retina-large.JPG",
+      "description": "Tomato sauce, mozzarella, pepperoni, and oregano",
+      "price": 11.99
+    },
+    {
+      "name": "Vegetarian Pizza",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/28d869ba-ebd1-476c-8c80-f63802d9b5cd-retina-large.JPG",
+      "description": "Tomato sauce, mozzarella, veggies, and herbs",
+      "price": 10.99
+    }
+  ],
+  "cusine": "Beef Pizza",
+  "rating": 5,
+  "description": "Authentic Italian Pizza with a wide variety of toppings",
+  "category": [
+    "Pizza"
+  ],
+  "deliveryTime": 40,
+  "address": {
+    "city": "Federico16",
+    "state": "Margarita52",
+    "street": "Ashlee_Braun55",
+    "zipCode": 22
+  },
+  "picture": {
+    "cover": "Silas87",
+    "logoUrl": "https://img.cdn4dd.com/p/fit=contain,width=100,height=100,format=auto,quality=95/media/restaurant/cover_square/ade9928a-19bf-46f4-aff6-b746aff3824f.png",
+    "imageUrl": "https://img.cdn4dd.com/p/fit=cover,width=250,height=150,format=auto,quality=50/media/photosV2/fd0d1a01-c979-4502-9632-dbeddd35cc47-retina-large.jpg"
+  },
+  "location": [
+    -91.963297,
+    -41.021321
+  ],
+  "deliveryRadius": 37,
+  "reviews": []
+},{
+  "_id": {
+    "$oid": "63e0330e314bae35eda87943"
+  },
+  "name": "Burger King",
+  "menus": [
+    {
+      "name": "Big Mac Meal",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/07da0bc8-4d9d-4c07-8e63-796b64cbf8c2-retina-large.jpg",
+      "description": "Tomato sauce, mozzarella, and basil",
+      "price": 8.99
+    },
+    {
+      "name": "20 McNuggets",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/af2958fc-5413-4611-9971-898f767d6fd2-retina-large.jpg",
+      "description": "Tomato sauce, mozzarella, pepperoni, and oregano",
+      "price": 5.49
+    },
+    {
+      "name": "French Fries",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/dfd0ab4e-3e54-4829-a505-37a91417c98f-retina-large.jpg",
+      "description": "Tomato sauce, mozzarella, veggies, and herbs",
+      "price": 2.99
+    }
+  ],
+  "cusine": "Burger & Fries",
+  "rating": 5,
+  "description": "Authentic American burgers with a wide variety of toppings",
+  "category": [
+    "Burger"
+  ],
+  "deliveryTime": 49,
+  "address": {
+    "city": "Federico16",
+    "state": "Margarita52",
+    "street": "Ashlee_Braun55",
+    "zipCode": 22
+  },
+  "picture": {
+    "cover": "Silas87",
+    "logoUrl": "https://img.cdn4dd.com/p/fit=contain,width=100,height=100,format=auto,quality=95/media/restaurant/cover_square/d43b7d43-f85b-4645-a31b-89abf0d9a407.png",
+    "imageUrl": "https://img.cdn4dd.com/p/fit=cover,width=250,height=150,format=auto,quality=50/media/photosV2/bc897e6b-a963-427f-afb6-ca0833f328a6-retina-large.png"
+  },
+  "location": [
+    -91.963295,
+    -41.021322
+  ],
+  "deliveryRadius": 37,
+  "reviews": []
+},{
+  "_id": {
+    "$oid": "63e03392314bae35eda87945"
+  },
+  "name": "Taco John's",
+  "menus": [
+    {
+      "_id": "63df4e14319816c6704f16a8",
+      "title": "Jeromy_Wisoky92",
+      "price": 66,
+      "picture": "Chesley_Schultz",
+      "category": "Elias87",
+      "description": "David_Runolfsdottir"
+    },
+    {
+      "_id": "63df4e14319816c6704f16a9",
+      "title": "Lenny_Medhurst",
+      "price": 16,
+      "picture": "Connor_Wisozk24",
+      "category": "Lesly7",
+      "description": "Linnie30"
+    }
+  ],
+  "cusine": "Softshell Taco",
+  "rating": 5,
+  "description": "Authentic American Tacos with a wide variety of toppings",
+  "category": [
+    "Taco"
+  ],
+  "deliveryTime": 46,
+  "address": {
+    "city": "Federico16",
+    "state": "Margarita52",
+    "street": "Ashlee_Braun55",
+    "zipCode": 22
+  },
+  "picture": {
+    "cover": "Silas87",
+    "logoUrl": "https://img.cdn4dd.com/p/fit=contain,width=100,height=100,format=auto,quality=95/media/restaurant/cover_square/618c92c4-d912-425a-8ead-9fe3008fd462.png",
+    "imageUrl": "https://img.cdn4dd.com/p/fit=cover,width=250,height=150,format=auto,quality=50/media/photosV2/c0c58161-86a8-462d-a5e7-31d303bbd8a6-retina-large.jpg"
+  },
+  "location": [
+    -91.963293,
+    -41.021321
+  ],
+  "deliveryRadius": 37,
+  "reviews": []
+},{
+  "_id": {
+    "$oid": "63e03435314bae35eda87947"
+  },
+  "name": "Casey's",
+  "menus": [
+    {
+      "name": "Margherita Pizza",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/28d869ba-ebd1-476c-8c80-f63802d9b5cd-retina-large.JPG",
+      "description": "Tomato sauce, mozzarella, and basil",
+      "price": 9.99
+    },
+    {
+      "name": "Pepperoni Pizza",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/28d869ba-ebd1-476c-8c80-f63802d9b5cd-retina-large.JPG",
+      "description": "Tomato sauce, mozzarella, pepperoni, and oregano",
+      "price": 11.99
+    },
+    {
+      "name": "Vegetarian Pizza",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/28d869ba-ebd1-476c-8c80-f63802d9b5cd-retina-large.JPG",
+      "description": "Tomato sauce, mozzarella, veggies, and herbs",
+      "price": 10.99
+    }
+  ],
+  "cusine": "Pizza & wings",
+  "rating": 5,
+  "description": "Authentic American Wings with a wide variety of toppings",
+  "category": [
+    "Pizza",
+    "Wings"
+  ],
+  "deliveryTime": 46,
+  "address": {
+    "city": "Federico16",
+    "state": "Margarita52",
+    "street": "Ashlee_Braun55",
+    "zipCode": 22
+  },
+  "picture": {
+    "cover": "Silas87",
+    "logoUrl": "https://img.cdn4dd.com/p/fit=contain,width=100,height=100,format=auto,quality=95/media/restaurant/cover_square/Caseys-Logo-DD_230x230.jpg",
+    "imageUrl": "https://img.cdn4dd.com/p/fit=cover,width=250,height=150,format=auto,quality=50/media/photosV2/b4bec8b8-a7df-4d01-b0b4-05f669987c28-retina-large.jpeg"
+  },
+  "location": [
+    -91.963298,
+    -41.021322
+  ],
+  "deliveryRadius": 37,
+  "reviews": []
+},{
+  "_id": {
+    "$oid": "63e034f9314bae35eda87949"
+  },
+  "name": "Hy-Vee",
+  "menus": [
+    {
+      "name": "Turkey Breast",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/4b486208-cae8-4583-ae9a-1bc56b712146-retina-large.JPG",
+      "description": "Tomato sauce, mozzarella, and basil",
+      "price": 42.99
+    },
+    {
+      "name": "Butterball Turkey",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/772b74a6-e701-4c8e-9f84-e208fc468209-retina-large.JPG",
+      "description": "Tomato sauce, mozzarella, pepperoni, and oregano",
+      "price": 47.49
+    },
+    {
+      "name": "Mashed Potatoes",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/ada6cd80-c0b4-4d47-8648-9f3afd8ef0d5-retina-large.JPG",
+      "description": "Tomato sauce, mozzarella, veggies, and herbs",
+      "price": 6.99
+    }
+  ],
+  "cusine": "Catering & Asian",
+  "rating": 5,
+  "description": "Authentic American foods with a wide variety of toppings",
+  "category": [
+    "Catering",
+    "Asian"
+  ],
+  "deliveryTime": 25,
+  "address": {
+    "city": "Federico16",
+    "state": "Margarita52",
+    "street": "Ashlee_Braun55",
+    "zipCode": 22
+  },
+  "picture": {
+    "cover": "Silas87",
+    "logoUrl": "https://img.cdn4dd.com/p/fit=contain,width=100,height=100,format=auto,quality=95/media/restaurant/cover_square/f00737bd-6012-4d38-92f2-f4ce43cb6c19.png",
+    "imageUrl": "https://img.cdn4dd.com/p/fit=cover,width=250,height=150,format=auto,quality=50/media/photosV2/772b74a6-e701-4c8e-9f84-e208fc468209-retina-large.JPG"
+  },
+  "location": [
+    -91.963293,
+    -41.021311
+  ],
+  "deliveryRadius": 37,
+  "reviews": []
+}]

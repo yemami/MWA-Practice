@@ -1,0 +1,29 @@
+<mat-toolbar>
+  <span>Restaurants near {{ address }}</span>
+  <span class="spacer"></span>
+  <mat-icon routerLink="/">arrow_back</mat-icon>
+</mat-toolbar>
+<div class="container">
+  <mat-card *ngFor="let restaurant of restaurants">
+    <mat-card-header>
+      <img mat-card-avatar [src]="restaurant.picture.logoUrl" />
+      <mat-card-title>{{ restaurant.name }}</mat-card-title>
+      <mat-card-subtitle>{{ restaurant.cuisine }}</mat-card-subtitle>
+      <mat-card-subtitle>{{ restaurant.rating }} stars</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <img id="banner" mat-card-image [src]="restaurant.picture.imageUrl" />
+      <p>{{ restaurant.description }}</p>
+      <p>Delivery Time: {{ restaurant.deliveryTime }} minutes</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        mat-raised-button
+        color="primary"
+        [routerLink]="['/restaurant/store/', restaurant._id]"
+      >
+        View Menus
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

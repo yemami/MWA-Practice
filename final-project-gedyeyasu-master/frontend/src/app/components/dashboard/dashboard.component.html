@@ -1,0 +1,19 @@
+
+<div class="dashboard-card">
+  <div class="welcome-section">
+    <h2>Welcome Back {{fullName}}</h2>
+  </div>
+
+  
+    <div class="swipe-container">
+      <app-card
+        *ngFor="let user of users"
+        [name]="user.name"
+        [age]="user.age"
+        [bio]="user.bio"
+        [location]="user.location"
+        [picture]="user.picture"
+        (like)="onLike(user)"
+        (dislike)="onDislike(user)"
+      ></app-card>
+    </div>

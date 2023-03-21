@@ -1,0 +1,9 @@
+
+<mat-spinner *ngIf="loading; else success"></mat-spinner>
+
+<ng-template #success>
+  <div style="margin: 100px auto; text-align: center;">
+    <h2>You have successfully verified your email</h2>
+    <button mat-stroked-button [routerLink]="['', 'cart']">Goto cart</button>
+  </div>
+</ng-template>

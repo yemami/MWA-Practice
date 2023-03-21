@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="restaurant-header">
+    <img
+      id="banner"
+      [src]="selectedRestaurant.picture.cover"
+      alt="Restaurant image"
+    />
+    <div class="image-container">
+      <img
+        mat-card-avatar
+        id="logo"
+        [src]="selectedRestaurant.picture.logoUrl"
+      />
+    </div>
+    <div class="title">
+      <h2>{{ selectedRestaurant.name }}</h2>
+      <p>{{ selectedRestaurant.description }}</p>
+    </div>
+    <mat-tab-group>
+      <mat-tab label="Menu">
+        <div id="tab-container">
+          <mat-card
+            id="tab-menu"
+            class="menu-card"
+            *ngFor="let menu of selectedRestaurant.menus"
+          >
+            <mat-card-header>
+              <mat-card-title>{{ menu.name }}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <img mat-card-image [src]="menu.image" />
+              <p>{{ menu.description }}</p>
+              <p>{{ menu.price | currency }}</p>
+            </mat-card-content>
+            <mat-card-actions>
+              <button
+                mat-raised-button
+                color="primary"
+                (click)="addToCart(menu)"
+              >
+                <!-- <button mat-raised-button color="primary"> -->
+                Add
+              </button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </mat-tab>
+      <!-- <mat-tab label="Reviews">
+        <mat-card
+          class="review-card"
+          *ngFor="let review of selectedRestaurant.reviews"
+        >
+          <mat-card-header>
+            <mat-card-title>{{ review.title }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>{{ review.description }}</p>
+            <p>{{ review.rating }}</p>
+          </mat-card-content>
+        </mat-card>
+      </mat-tab> -->
+    </mat-tab-group>
+  </div>
+</div>

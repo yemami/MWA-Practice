@@ -1,0 +1,25 @@
+mat-form-field{
+    width: 90%;
+}
+.chat-container {
+    height: calc(100vh - 157px);
+    overflow-y: scroll;
+    padding: 16px;
+  }
+  
+  .message-item {
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .user-message {
+    background-color: #e6e6e6;
+    align-self: flex-end;
+  }
+  
+  .bot-message {
+    background-color: #f2f2f2;
+    align-self: flex-start;
+  }
+  

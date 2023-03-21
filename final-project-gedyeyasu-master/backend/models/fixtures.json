@@ -1,0 +1,41 @@
+{
+  "name": "McDonald's",
+  "menu": [
+    {
+      "name": "Margherita Pizza",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/28d869ba-ebd1-476c-8c80-f63802d9b5cd-retina-large.JPG",
+      "description": "Tomato sauce, mozzarella, and basil",
+      "price": 9.99
+    },
+    {
+      "name": "Pepperoni Pizza",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/28d869ba-ebd1-476c-8c80-f63802d9b5cd-retina-large.JPG",
+      "description": "Tomato sauce, mozzarella, pepperoni, and oregano",
+      "price": 11.99
+    },
+    {
+      "name": "Vegetarian Pizza",
+      "image": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/28d869ba-ebd1-476c-8c80-f63802d9b5cd-retina-large.JPG",
+      "description": "Tomato sauce, mozzarella, veggies, and herbs",
+      "price": 10.99
+    }
+  ],
+  "cusine": "Burger & Fries",
+  "rating": 5,
+  "description": "Authentic American burgers with a wide variety of toppings",
+  "category": ["Burger"],
+  "deliveryTime": 46,
+  "address": {
+    "city": "Federico16",
+    "state": "Margarita52",
+    "street": "Ashlee_Braun55",
+    "zipCode": 22
+  },
+  "picture": {
+    "cover": "Silas87",
+    "logoUrl": "https://img.cdn4dd.com/p/fit=contain,width=100,height=100,format=auto,quality=95/media/restaurant/cover_square/efe58558-a9dc-466d-922b-ecce4b3213b1.png",
+    "imageUrl": "https://img.cdn4dd.com/p/fit=cover,width=150,height=150,format=auto,quality=50/media/photosV2/8abb40c2-fc64-46bb-a526-f2b2d7579f6d-retina-large.jpg"
+  },
+  "location": [-91.963298, -41.021322],
+  "deliveryRadius": 37
+}

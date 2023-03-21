@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use '@angular/material' as mat;
+@include mat.core();
+
+/* For use in src/lib/core/theming/_palette.scss */
+$reddish-palette: (
+    50 : #fde3e0,
+    100 : #f9b9b3,
+    200 : #f58b80,
+    300 : #f15d4d,
+    400 : #ee3a26,
+    500 : #eb1700,
+    600 : #e91400,
+    700 : #e51100,
+    800 : #e20d00,
+    900 : #dd0700,
+    A100 : #ffffff,
+    A200 : #ffd2d1,
+    A400 : #ff9f9e,
+    A700 : #ff8685,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+$my-primary: mat.define-palette($reddish-palette, 500);
+$my-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$my-theme: mat.define-light-theme((
+ color: (
+   primary: $my-primary,
+   accent: $my-accent,
+ ),
+ typography: mat.define-typography-config(),
+ density: 0,
+));
+
+@include mat.all-component-themes($my-theme);
+
+
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  // font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}

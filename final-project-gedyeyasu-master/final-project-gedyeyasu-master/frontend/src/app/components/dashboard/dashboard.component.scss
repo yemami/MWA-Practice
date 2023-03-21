@@ -1,0 +1,215 @@
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    padding-top: 150px;
+    // background-image: linear-gradient(to bottom, #F7F7F7, #FBFBFB);
+    // background-image: url("https://cdn.vox-cdn.com/thumbor/wjA6QmHhWR2i7mmBoeC4snZNUhM=/0x0:921x613/1200x800/filters:focal(388x234:534x380)/cdn.vox-cdn.com/uploads/chorus_image/image/57403875/Screen_Shot_2017_10_31_at_9.59.47_AM.0.png");
+    background-image: url('/assets/images/doordash_cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    text-align: center;
+    color: white;
+  }
+
+  .header-section h1 {
+    font-weight: 700;
+    font-size: 64px;
+    max-width: 668px;
+    line-height: 76px;
+  }
+
+  #search {
+    width: 400px;
+    margin-top: 8px;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .categories-section {
+    padding: 50px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .categories-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  .categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+  }
+
+  mat-card {
+    width: 250px;
+    margin: 1%;
+    cursor: pointer;
+  }
+
+#search_icon{
+    cursor: pointer;
+    color: white !important;
+    background-color: #eb1700,;
+    border-radius: 25px;
+}
+
+mat-nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+mat-list-item {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  cursor: pointer;
+  padding: 45px;
+}
+
+#cat_icon {
+  font-size: 24px;
+  margin-right: 20px;
+  transition: transform 0.3s;
+  display: contents!important;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  transition: color 0.3s;
+}
+
+.active-category {
+  color: #3f51b5;
+  transform: scale(1.1);
+}
+
+mat-chip-listbox {
+  margin-bottom: 32px;
+}
+
+.restaurant {
+  max-width: 33%;
+  flex-basis: 33%;
+  height: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgba(165, 162, 162, 0.5);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+.menu-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 25px;
+}
+
+.menu-item {
+  text-align: left;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.restaurant-text {
+  margin-top: 10px;
+  color: rgb(42, 41, 41);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-container input {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid gray;
+  border-radius: 25px 0 0 25px;
+  width: 50%;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2196f3;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
+
+.search-results-card {
+  padding: 20px;
+  background-color: lightgray;
+  margin: 20px 20%;
+}
+
+.search-results-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.search-results-card li {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+#search{
+  font-size: 14px;
+  border-radius: 25px!important;
+}
+
+#search_icon{
+  cursor: pointer;
+  color: white !important;
+  background-color: #3F51B5;
+  border-radius: 25px;
+}
